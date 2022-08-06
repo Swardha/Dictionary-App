@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: url(img1.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.wrapper{
+    position:absolute;
+    width:70vmin;
+    background-color: rgba(255,255,255,0.2);
+    margin:auto;
+    backdrop-filter: blur(12px);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    padding:80px 40px;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+   
+}
+
+.search-box{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.search-box input{
+    width:70%;
+    padding:6px;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(97, 134, 235);
+    color:white;
+    font-size:17px ;
+}
+
+input:focus{
+    border-color: rgb(22, 207, 198);
+    
+}
+
+.search-box button{
+    width:26%;
+    padding:6px 0px;
+    height:40px;
+    border:none;
+    outline: none;
+    background-color: rgb(16, 9, 78);
+    color:white;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+
+.search-result{
+    position: relative;
+}
+
+h3{
+    margin-top: 15px;
+    color:rgb(80, 73, 73);
+    text-align: center;
+    
+}
+
+h2{
+    color:white;
+}
+
+.search-result .word{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+
+.search-result .details{
+    display:flex;
+    gap:12px;
+    margin:10px;
+    color:rgb(221, 216, 216);
+}
+
+.meaning{
+    color:rgb(224, 211, 211);
+    line-height: 30px;
+}
+
+.example{
+    color:rgb(223, 203, 203);
+    margin-top: 10px;
+    border-left: 3px solid rgb(221, 113, 63);
+    padding-left: 15px;
+    font-style: italic;
+}
+.synonyms{
+    margin:20px;
+    font-style: italic;
+    color:rgb(231, 221, 221);
+}
