@@ -10,8 +10,6 @@ button.addEventListener("click", ()=>{
     fetch(`${url}${event}`)
     .then((res)=> res.json())
     .then((data)=>{
-        console.log(data);
-        console.log(event);
 // rendering search result
         result.innerHTML=`
         <div class="word">
@@ -19,7 +17,7 @@ button.addEventListener("click", ()=>{
     </div>
     <div class="details">   
         <p>${data[0].meanings[0].partOfSpeech}</p>
-        <p>${data[0].phonetics[0].text}</p>
+        <p>${data[0].phonetics[0].text || data[0].phonetics[1].text}</p>
     </div>
     <p class="meaning">${data[0].meanings[0].definitions[0].definition}</p>
     <p class="example">${data[0].meanings[0].definitions[0].example || ""}</p>
